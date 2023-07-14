@@ -11,7 +11,7 @@
 
 不支持APlayer的[MSE模式](https://aplayer.js.org/#/zh-Hans/?id=mse-%E6%94%AF%E6%8C%81)
 
-演示地址：
+演示地址：<https://yuannancheng.github.io/parse-aplayer-components/>
 
 ## 入门
 
