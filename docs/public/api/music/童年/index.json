@@ -1,0 +1,12 @@
+{
+  "extends": "../../aplayer.config.base.json",
+  "audio": [
+    {
+      "name": "童年",
+      "artist": "张震岳",
+      "url": "./audio.mp3",
+      "cover": "./pic.jpg",
+      "lrc": "./lrc.lrc"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "name": "parse-aplayer-components",
+  "description": "使用自定义组件快速配置 APlayer 播放器",
+  "version": "1.0.0",
+  "type": "module",
+  "author": "在同一时空相遇 <y17870181601@163.com>",
+  "license": "MIT",
+  "repository": "https://github.com/yuannancheng/parse-aplayer-components",
+  "bugs": {
+    "url": "https://github.com/yuannancheng/parse-aplayer-components/issues"
+  },
+  "homepage": "https://github.com/yuannancheng/parse-aplayer-components",
+  "doc": "https://yuannancheng.github.io/parse-aplayer-components/",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/parseAplayerComponents.umd.cjs",
+  "module": "./dist/parseAplayerComponents.js",
+  "exports": {
+    ".": {
+      "import": "./dist/parseAplayerComponents.js",
+      "require": "./dist/parseAplayerComponents.umd.cjs"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "keywords": [
+    "APlayer",
+    "plugin",
+    "parse",
+    "components",
+    "wordpress"
+  ],
+  "devDependencies": {
+    "aplayer": "^1.10.1",
+    "vite": "^4.3.9",
+    "vitepress": "^1.0.0-beta.5"
+  }
+}

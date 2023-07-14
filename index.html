@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parse APlayer Components</title>
+    <style>
+      div.warp {
+        width: 100%;
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      p.title {
+        margin: 50px auto 20px;
+        padding: 30px 20px 10px;
+        font-size: 14px;
+        font-weight: 400;
+        color: #666;
+        border-bottom: 1px solid #eee;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="warp">
+        <p class="title">完全使用组件传值配置：使用属性传值不支持配置播放列表</p>
+        <aplayer
+          autoplay="false"
+          preload="none"
+          loop="none"
+          lrc-type="3"
+          volume="1"
+          audio.name="笼"
+          audio.artist="张碧晨"
+          audio.url="docs/api/music/笼/audio.mp3"
+          audio.cover="docs/api/music/笼/pic.jpg"
+          audio.lrc="docs/api/music/笼/lrc.lrc"
+        ></aplayer>
+
+        <p class="title">
+          部分使用组件传值配置：组件配置会覆盖配置文件配置，只要配置了audio属性，就会覆盖配置文件中的audio属性
+        </p>
+        <aplayer
+          config="docs/api/play-list/list1.json"
+          volume="0.3"
+          audio.name="笼"
+          audio.artist="张碧晨"
+          audio.url="docs/api/music/笼/audio.mp3"
+          audio.cover="docs/api/music/笼/pic.jpg"
+          audio.lrc="docs/api/music/笼/lrc.lrc"
+        ></aplayer>
+
+        <p class="title">部分使用组件传值配置：组件配置会覆盖配置文件配置</p>
+        <aplayer config="docs/api/music/笼/index.json" volume="0.3"></aplayer>
+
+        <p class="title">完全使用配置文件配置单首歌曲</p>
+        <aplayer config="docs/api/music/笼/index.json"></aplayer>
+
+        <p class="title">完全使用配置文件配置播放列表</p>
+        <aplayer config="docs/api/play-list/list1.json"></aplayer>
+
+        <p class="title">完全使用配置文件配置播放列表：播放列表嵌套播放列表</p>
+        <aplayer config="docs/api/play-list/list1-and-list2.json"></aplayer>
+      </div>
+    </div>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>

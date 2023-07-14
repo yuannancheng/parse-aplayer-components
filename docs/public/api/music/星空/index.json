@@ -1,0 +1,12 @@
+{
+  "extends": "../../aplayer.config.base.json",
+  "audio": [
+    {
+      "name": "星空",
+      "artist": "五月天",
+      "url": "./audio.mp3",
+      "cover": "./pic.jpg",
+      "lrc": "./lrc.lrc"
+    }
+  ]
+}

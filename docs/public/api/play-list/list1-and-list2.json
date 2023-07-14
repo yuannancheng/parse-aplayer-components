@@ -1,0 +1,7 @@
+{
+  "extends": "../aplayer.config.base.json",
+  "audio": [
+    "./list1.json",
+    "./list2.json"
+  ]
+}

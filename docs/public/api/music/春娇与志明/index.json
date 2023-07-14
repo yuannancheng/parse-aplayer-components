@@ -1,0 +1,12 @@
+{
+  "extends": "../../aplayer.config.base.json",
+  "audio": [
+    {
+      "name": "春娇与志明",
+      "artist": "街道办GDC",
+      "url": "./audio.mp3",
+      "cover": "./pic.jpg",
+      "lrc": "./lrc.lrc"
+    }
+  ]
+}
