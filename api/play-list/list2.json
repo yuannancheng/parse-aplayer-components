@@ -1,0 +1,14 @@
+{
+  "extends": "../aplayer.config.base.json",
+  "audio": [
+    "../music/好久不见/index.json",
+    {
+      "name": "星空（Live）",
+      "artist": "五月天",
+      "url": "../music/星空（Live）/audio.mp3",
+      "cover": "../music/星空（Live）/pic.jpg",
+      "lrc": "../music/星空（Live）/lrc.lrc"
+    },
+    "../music/春娇与志明/index.json"
+  ]
+}
