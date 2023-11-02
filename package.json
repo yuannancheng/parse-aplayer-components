@@ -1,7 +1,7 @@
 {
   "name": "parse-aplayer-components",
   "description": "使用自定义组件快速配置 APlayer 播放器",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "author": "在同一时空相遇 <y17870181601@163.com>",
   "license": "MIT",

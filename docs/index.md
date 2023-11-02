@@ -120,7 +120,7 @@ api
     └── list2.json
 ```
 
-在[此处](https://github.com/yuannancheng/parse-aplayer-components/tree/main/docs/api)你可以看到上面配置的源码
+在[此处](https://github.com/yuannancheng/parse-aplayer-components/tree/main/docs/public/api)你可以看到上面配置的源码
 
 所有 `.json` 格式的文件都是一个配置文件，兼容 [APlayer的参数列表](https://aplayer.js.org/#/zh-Hans/?id=%E5%8F%82%E6%95%B0)，并额外允许一个字段：`extends`
 

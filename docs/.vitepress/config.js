@@ -8,5 +8,13 @@ export default defineConfig({
     socialLinks: [
       { icon: 'github', link: 'https://github.com/yuannancheng/parse-aplayer-components' }
     ]
+  },
+  vue: {
+    template: {
+      // 配置自定义组件
+      compilerOptions: {
+        isCustomElement: (tag) => ['aplayer'].includes(tag)
+      }
+    }
   }
 })

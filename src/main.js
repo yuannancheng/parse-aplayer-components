@@ -4,7 +4,7 @@
 
 import { initAPlayer } from './parseAplayer'
 
-export default (function () {
+export default (async function () {
   // 获取页面中所有 aplayer 组件
   const components = document.querySelectorAll('aplayer')
 
@@ -17,6 +17,6 @@ export default (function () {
     APlayerComponent.parentElement.replaceChild(div, APlayerComponent)
 
     // 初始化 APlayer
-    initAPlayer(APlayerComponent, div)
+    await initAPlayer(APlayerComponent, div, i)
   }
 })()
